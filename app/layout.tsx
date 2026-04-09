@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GamingLogic.sg | 顶级博彩玩法指南与数据知识库1",
-  description: "提供最全的新加坡博彩游戏指南，包括老虎机(Slots)、百家乐、体育投注等核心玩法解析及RNG数据透明化报告。1",
-  keywords: ["博彩百科", "Slots技巧", "百家乐赢钱逻辑", "RNG解析", "新加坡博弈数据"],
+  title: "GamingLogic.sg | 顶级博彩玩法指南与数据知识库",
+  description: "提供最全的博彩游戏指南，包括老虎机(Slots)、百家乐、体育投注等核心玩法解析及RNG数据透明化报告。",
+  keywords: ["博彩百科", "Slots技巧", "百家乐赢钱逻辑", "RNG解析", "博弈数据"],
 };
 
 export default function RootLayout({
