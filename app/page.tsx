@@ -7,7 +7,7 @@ export default function Home() {
           GamingLogic.sg
         </h1>
         <p className="text-xl text-neutral-400 mb-8">
-          专业的博弈数据分析与玩法百科，带你破解随机数生成器 (RNG) 的秘密。
+          专业的博弈数据分析与玩法百科，带你破解随机数生成器 (RNG) 的秘密。113
         </p>
         <div className="flex justify-center gap-4">
           <button className="bg-yellow-600 hover:bg-yellow-500 px-6 py-3 rounded-lg font-bold">查看游戏攻略</button>
