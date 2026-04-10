@@ -1,3 +1,46 @@
+import Link from "next/link";
+
+const articles = [
+  {
+    href: "/articles/deciphering-rtp-slot-payout-mechanics",
+    label: "Article 1",
+    title:
+      "Deciphering RTP: The Mathematical Backbone of Slot Payout Mechanics",
+    excerpt:
+      "Return to player (RTP), house edge, theoretical vs. actual RTP, and how progressive jackpots change the math.",
+  },
+  {
+    href: "/articles/volatility-variance-managing-risk-modern-gaming",
+    label: "Article 2",
+    title: "Volatility and Variance: Managing Risk in Modern Gaming",
+    excerpt:
+      "Risk profiles, low vs. high volatility, near-miss design, and bet-to-bankroll ratios for surviving variance.",
+  },
+  {
+    href: "/articles/rng-algorithms-fairness-auditing",
+    label: "Article 3",
+    title: "Behind the Virtual Reels: RNG Algorithms and Fairness Auditing",
+    excerpt:
+      "PRNG vs. TRNG, reel mapping, eCOGRA-style auditing, and debunking hot and cold machines.",
+  },
+  {
+    href: "/articles/strategic-selection-provider-analysis",
+    label: "Article 4",
+    title:
+      "The Architecture of Winning: Strategic Selection and Provider Analysis",
+    excerpt:
+      "Megaways, cluster pays, studio math signatures, and weighing bonus buys vs. organic triggers.",
+  },
+  {
+    href: "/articles/high-volatility-slots-guide",
+    label: "Article 5",
+    title:
+      "High Volatility Slots: What They Are, Who They Suit, and How to Approach Them",
+    excerpt:
+      "Volatility in plain language, who high-variance games fit, a reference table of popular titles, and bankroll/session habits.",
+  },
+] as const;
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-neutral-100 p-8">
@@ -11,7 +54,7 @@ export default function Home() {
 
       <section className="max-w-4xl mx-auto text-center py-12 md:py-20">
         <h1 className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-          GamingLogic.sg
+          GamingLogic
         </h1>
         <p className="text-xl text-neutral-400 mb-8">
           Professional game data and play guides—making sense of random number
@@ -55,6 +98,38 @@ export default function Home() {
             data-first mindset.
           </p>
         </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto pb-16" aria-labelledby="articles-heading">
+        <h2
+          id="articles-heading"
+          className="text-2xl font-bold text-neutral-100 mb-6 text-center md:text-left"
+        >
+          Articles
+        </h2>
+        <ul className="space-y-4">
+          {articles.map((article) => (
+            <li key={article.href}>
+              <Link
+                href={article.href}
+                className="group block rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 transition-colors hover:border-yellow-600/50 hover:bg-neutral-900/70"
+              >
+                <p className="text-xs font-medium uppercase tracking-wide text-yellow-500/90 mb-2">
+                  {article.label}
+                </p>
+                <h3 className="text-lg font-bold text-neutral-100 group-hover:text-yellow-400 transition-colors">
+                  {article.title}
+                </h3>
+                <p className="mt-2 text-sm text-neutral-500 leading-relaxed">
+                  {article.excerpt}
+                </p>
+                <span className="mt-4 inline-block text-sm font-semibold text-yellow-500 group-hover:text-yellow-400">
+                  Read article →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <footer className="max-w-4xl mx-auto border-t border-neutral-800 pt-12 pb-8">
