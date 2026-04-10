@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleAttribution } from "@/app/components/ArticleAttribution";
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function ArticleRtpPage() {
     <main className="min-h-screen bg-neutral-950 text-neutral-100 px-6 py-10 md:px-8">
       <article className="max-w-3xl mx-auto">
         <Breadcrumbs items={breadcrumbItems} />
+        <ArticleAttribution />
 
         <header className="mb-12">
           <p className="text-sm font-medium text-yellow-500/90 mb-3">Article 1</p>
