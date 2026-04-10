@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleAttribution } from "@/app/components/ArticleAttribution";
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
+import { WikiLink } from "@/app/components/WikiLink";
 
 const title =
   "High Volatility Slots: What They Are, Who They Suit, and How to Approach Them";
@@ -25,7 +26,7 @@ export default function ArticleHighVolatilitySlotsPage() {
 
         <header className="mb-12">
           <p className="text-sm font-medium text-yellow-500/90 mb-3">
-            Article 5
+            Article 2
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-50 leading-tight">
             {title}
@@ -38,8 +39,9 @@ export default function ArticleHighVolatilitySlotsPage() {
         <div className="space-y-6">
           <section>
             <p className="text-neutral-400 leading-relaxed">
-              High-volatility slots are built for players who are comfortable
-              with long quiet stretches in exchange for the{" "}
+              <WikiLink page="Variance">High-volatility</WikiLink>{" "}
+              <WikiLink page="Slot_machine">slots</WikiLink> are built for players
+              who are comfortable with long quiet stretches in exchange for the{" "}
               <em>possibility</em> of very large wins. This piece breaks down
               what that label actually means, who tends to fit that risk profile,
               which games often show up in “high variance” conversations, and
@@ -57,9 +59,10 @@ export default function ArticleHighVolatilitySlotsPage() {
               low-volatility one, but its win distribution is “fatter” in the
               tail: when something significant lands, it can be multiples—
               sometimes thousands—of your stake. That pattern creates suspense
-              by design. Many modern titles in this bucket still publish RTP in
-              the mid‑90s percent range; remember RTP describes long-run
-              payback, not what happens in one evening.
+              by design. Many modern titles in this bucket still publish{" "}
+              <WikiLink page="Return_to_player">RTP</WikiLink> in the mid‑90s
+              percent range; remember RTP describes long-run payback, not what
+              happens in one evening.
             </p>
           </section>
 
@@ -84,7 +87,8 @@ export default function ArticleHighVolatilitySlotsPage() {
               <li>
                 <strong className="text-neutral-300">Larger cushion vs. bet:</strong>{" "}
                 You can afford many dead spins without the experience becoming
-                stressful—variance swings are real.
+                stressful—<WikiLink page="Variance">variance</WikiLink> swings
+                are real.
               </li>
             </ul>
             <p className="text-neutral-400 leading-relaxed mt-4">
@@ -102,8 +106,10 @@ export default function ArticleHighVolatilitySlotsPage() {
               Industry commentary often ballparks winning spins in the ~20%
               range for some aggressive high-variance designs—always game-
               specific, never a promise. The outsized moments usually cluster
-              around features: free spins, persistent multipliers, expanding
-              symbols, or “hold &amp; respin” style bonuses. Those features are
+              around features:{" "}
+              <WikiLink page="Free_spin">free spins</WikiLink>, persistent
+              multipliers, expanding symbols, or “hold &amp; respin” style
+              bonuses. Those features are
               typically harder to trigger than on mellower games, which is
               exactly where the volatility shows up in day-to-day play.
             </p>
@@ -115,8 +121,9 @@ export default function ArticleHighVolatilitySlotsPage() {
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-4">
               The table below summarizes commonly cited examples. RTP and max-
-              win figures are as typically advertised—always verify in-game rules
-              for your market and version.
+              <WikiLink page="Return_to_player">RTP</WikiLink> and max-win
+              figures are as typically advertised—always verify in-game rules for
+              your market and version.
             </p>
             <div className="overflow-x-auto rounded-xl border border-neutral-800">
               <table className="w-full min-w-[36rem] text-sm text-left">
@@ -126,7 +133,8 @@ export default function ArticleHighVolatilitySlotsPage() {
                       Slot
                     </th>
                     <th className="p-3 font-semibold text-neutral-200">
-                      RTP (approx.)
+                      <WikiLink page="Return_to_player">RTP</WikiLink>{" "}
+                      (approx.)
                     </th>
                     <th className="p-3 font-semibold text-neutral-200">
                       Max win (advertised)
@@ -154,7 +162,8 @@ export default function ArticleHighVolatilitySlotsPage() {
                     <td className="p-3">~96.03%</td>
                     <td className="p-3">150,000×</td>
                     <td className="p-3">
-                      Extreme variance; xWays / enhancer-style mechanics
+                      Extreme <WikiLink page="Variance">variance</WikiLink>;
+                      xWays / enhancer-style mechanics
                     </td>
                   </tr>
                   <tr className="border-b border-neutral-800/80">
@@ -179,12 +188,14 @@ export default function ArticleHighVolatilitySlotsPage() {
                   </tr>
                   <tr className="border-b border-neutral-800/80">
                     <td className="p-3 font-medium text-neutral-300">
-                      Bonanza Megaways
+                      Bonanza{" "}
+                      <WikiLink page="Video_slot_machine">Megaways</WikiLink>
                     </td>
                     <td className="p-3">~96.00%</td>
                     <td className="p-3">~26,000×</td>
                     <td className="p-3">
-                      Megaways + reactions; uncapped multipliers in bonus
+                      <WikiLink page="Video_slot_machine">Megaways</WikiLink> +
+                      reactions; uncapped multipliers in bonus
                     </td>
                   </tr>
                   <tr className="border-b border-neutral-800/80">
@@ -252,8 +263,10 @@ export default function ArticleHighVolatilitySlotsPage() {
               Playing with your eyes open
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-4">
-              None of this turns slots into positive-expectation hobbies. It only
-              helps you align stake and time with how brutal variance can feel:
+              None of this turns <WikiLink page="Slot_machine">slots</WikiLink>{" "}
+              into positive-expectation hobbies. It only helps you align stake
+              and time with how brutal{" "}
+              <WikiLink page="Variance">variance</WikiLink> can feel:
             </p>
             <ul className="list-disc pl-5 space-y-3 text-neutral-400 leading-relaxed marker:text-yellow-600">
               <li>
@@ -264,8 +277,8 @@ export default function ArticleHighVolatilitySlotsPage() {
               <li>
                 <strong className="text-neutral-300">Small bets vs. cushion:</strong>{" "}
                 Many analysts suggest thinking in hundreds of base bets for
-                high-variance sessions so normal droughts do not wipe you out
-                in minutes.
+                <WikiLink page="Variance">high-variance</WikiLink> sessions so
+                normal droughts do not wipe you out in minutes.
               </li>
               <li>
                 <strong className="text-neutral-300">Session length:</strong>{" "}
@@ -274,9 +287,10 @@ export default function ArticleHighVolatilitySlotsPage() {
               </li>
               <li>
                 <strong className="text-neutral-300">Bonus buys:</strong>{" "}
-                Where legal, feature buys skip straight to high-variance
-                territory; treat them like a single expensive spin sequence, not
-                a fix for losses.
+                Where legal, feature buys skip straight to{" "}
+                <WikiLink page="Variance">high-variance</WikiLink> territory;
+                treat them like a single expensive spin sequence, not a fix for
+                losses.
               </li>
               <li>
                 <strong className="text-neutral-300">After losses:</strong>{" "}
@@ -301,8 +315,10 @@ export default function ArticleHighVolatilitySlotsPage() {
                 combo.
               </li>
               <li>
-                Compare published RTP and max exposure, but treat both as
-                long-run / theoretical framing, not tonight&apos;s forecast.
+                Compare published{" "}
+                <WikiLink page="Return_to_player">RTP</WikiLink> and max
+                exposure, but treat both as long-run / theoretical framing, not
+                tonight&apos;s forecast.
               </li>
             </ul>
           </section>
@@ -350,7 +366,10 @@ export default function ArticleHighVolatilitySlotsPage() {
                   </tr>
                   <tr className="align-top">
                     <td className="p-3">
-                      Many list RTP around 96%+ (still a house edge)
+                      Many list{" "}
+                      <WikiLink page="Return_to_player">RTP</WikiLink> around 96%+
+                      (still a{" "}
+                      <WikiLink page="House_edge">house edge</WikiLink>)
                     </td>
                     <td className="p-3">
                       Without discipline, losses can spiral
@@ -366,11 +385,14 @@ export default function ArticleHighVolatilitySlotsPage() {
               Closing take
             </h2>
             <p className="text-neutral-400 leading-relaxed">
-              High-volatility slots are neither “smarter” nor “fairer” than other
-              games—they simply concentrate risk into fewer, sharper moments. If
-              that sounds exhausting rather than exciting, there is no prize for
-              forcing it. Wherever you play, use licensed operators in your
-              jurisdiction, read the real paytable, and treat every session as
+              <WikiLink page="Variance">High-volatility</WikiLink>{" "}
+              <WikiLink page="Slot_machine">slots</WikiLink> are neither
+              “smarter” nor “fairer” than other games—they simply concentrate risk
+              into fewer, sharper moments. If that sounds exhausting rather than
+              exciting, there is no prize for forcing it. Wherever you play, use
+              licensed operators in your jurisdiction (see{" "}
+              <WikiLink page="Online_gambling">online gambling</WikiLink>{" "}
+              regulation), read the real paytable, and treat every session as
               paid entertainment—not income.
             </p>
           </section>
@@ -378,9 +400,11 @@ export default function ArticleHighVolatilitySlotsPage() {
           <section className="rounded-lg border border-neutral-800 bg-neutral-900/40 p-4 text-sm text-neutral-500">
             <p className="leading-relaxed">
               <strong className="text-neutral-400">Responsible play:</strong>{" "}
-              Gambling can be addictive. Only wager what you can afford to lose,
-              and seek help from recognized support services if play stops
-              feeling voluntary. 18+ where applicable.
+              <WikiLink page="Gambling">Gambling</WikiLink> can be addictive.
+              Only wager what you can afford to lose, and seek help from
+              recognized support services (see{" "}
+              <WikiLink page="Problem_gambling">problem gambling</WikiLink>{" "}
+              resources) if play stops feeling voluntary. 18+ where applicable.
             </p>
           </section>
         </div>

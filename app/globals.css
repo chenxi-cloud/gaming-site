@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* react-lite-youtube-embed: keep 16:9 box full-width inside articles */
+.article-youtube .yt-lite {
+  width: 100%;
+  max-width: 100%;
+}

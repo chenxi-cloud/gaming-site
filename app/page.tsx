@@ -2,8 +2,24 @@ import Link from "next/link";
 
 const articles = [
   {
-    href: "/articles/deciphering-rtp-slot-payout-mechanics",
+    href: "/articles/top-gambling-youtube-creators",
     label: "Article 1",
+    title:
+      "The 5 Hottest Gambling Creators on YouTube—Streams That Broke the Internet",
+    excerpt:
+      "Roshtein to Fruity Slots: who dominates casino YouTube, why they hit, and lite-embedded viral clips.",
+  },
+  {
+    href: "/articles/high-volatility-slots-guide",
+    label: "Article 2",
+    title:
+      "High Volatility Slots: What They Are, Who They Suit, and How to Approach Them",
+    excerpt:
+      "Volatility in plain language, who high-variance games fit, a reference table of popular titles, and bankroll/session habits.",
+  },
+  {
+    href: "/articles/deciphering-rtp-slot-payout-mechanics",
+    label: "Article 3",
     title:
       "Deciphering RTP: The Mathematical Backbone of Slot Payout Mechanics",
     excerpt:
@@ -11,33 +27,25 @@ const articles = [
   },
   {
     href: "/articles/volatility-variance-managing-risk-modern-gaming",
-    label: "Article 2",
+    label: "Article 4",
     title: "Volatility and Variance: Managing Risk in Modern Gaming",
     excerpt:
       "Risk profiles, low vs. high volatility, near-miss design, and bet-to-bankroll ratios for surviving variance.",
   },
   {
     href: "/articles/rng-algorithms-fairness-auditing",
-    label: "Article 3",
+    label: "Article 5",
     title: "Behind the Virtual Reels: RNG Algorithms and Fairness Auditing",
     excerpt:
       "PRNG vs. TRNG, reel mapping, eCOGRA-style auditing, and debunking hot and cold machines.",
   },
   {
     href: "/articles/strategic-selection-provider-analysis",
-    label: "Article 4",
+    label: "Article 6",
     title:
       "The Architecture of Winning: Strategic Selection and Provider Analysis",
     excerpt:
       "Megaways, cluster pays, studio math signatures, and weighing bonus buys vs. organic triggers.",
-  },
-  {
-    href: "/articles/high-volatility-slots-guide",
-    label: "Article 5",
-    title:
-      "High Volatility Slots: What They Are, Who They Suit, and How to Approach Them",
-    excerpt:
-      "Volatility in plain language, who high-variance games fit, a reference table of popular titles, and bankroll/session habits.",
   },
 ] as const;
 
@@ -56,48 +64,10 @@ export default function Home() {
         <h1 className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
           GamingLogic
         </h1>
-        <p className="text-xl text-neutral-400 mb-8">
+        <p className="text-xl text-neutral-400">
           Professional game data and play guides—making sense of random number
           generators (RNG), RTP, and how the math actually works.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <button
-            type="button"
-            className="bg-yellow-600 hover:bg-yellow-500 px-6 py-3 rounded-lg font-bold"
-          >
-            Game guides
-          </button>
-          <button
-            type="button"
-            className="border border-neutral-700 hover:bg-neutral-900 px-6 py-3 rounded-lg"
-          >
-            Odds &amp; calculators
-          </button>
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-16">
-        <div className="p-6 border border-neutral-800 rounded-2xl hover:border-yellow-600/50 transition-colors">
-          <h2 className="text-2xl font-bold mb-4">Slot games</h2>
-          <p className="text-neutral-500">
-            Volatility, RTP (return to player), and how pay mechanics and RNG shape
-            what you see on the reels.
-          </p>
-        </div>
-        <div className="p-6 border border-neutral-800 rounded-2xl hover:border-yellow-600/50 transition-colors">
-          <h2 className="text-2xl font-bold mb-4">Table games</h2>
-          <p className="text-neutral-500">
-            Baccarat, blackjack, roulette—rules and strategy framed with clear
-            probability, not hype.
-          </p>
-        </div>
-        <div className="p-6 border border-neutral-800 rounded-2xl hover:border-yellow-600/50 transition-colors">
-          <h2 className="text-2xl font-bold mb-4">Sports betting</h2>
-          <p className="text-neutral-500">
-            How lines and implied probability work, and how to read markets with a
-            data-first mindset.
-          </p>
-        </div>
       </section>
 
       <section className="max-w-4xl mx-auto pb-16" aria-labelledby="articles-heading">

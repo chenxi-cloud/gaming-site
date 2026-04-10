@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleAttribution } from "@/app/components/ArticleAttribution";
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
+import { WikiLink } from "@/app/components/WikiLink";
 
 const title =
   "Volatility and Variance: Managing Risk in Modern Gaming";
@@ -25,7 +26,7 @@ export default function ArticleVolatilityPage() {
 
         <header className="mb-12">
           <p className="text-sm font-medium text-yellow-500/90 mb-3">
-            Article 2
+            Article 4
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-50 leading-tight">
             {title}
@@ -38,11 +39,15 @@ export default function ArticleVolatilityPage() {
               Introduction
             </h2>
             <p className="text-neutral-400 leading-relaxed">
-              While RTP tells you how much a machine pays back, Volatility (or
-              Variance) tells you how it pays back. It is the measure of risk
-              associated with a specific game. In technical terms, volatility
-              describes the standard deviation of a game&apos;s payout
-              distribution.
+              While <WikiLink page="Return_to_player">RTP</WikiLink> tells you
+              how much a machine pays back,{" "}
+              <WikiLink page="Variance">
+                Volatility (or Variance)
+              </WikiLink>{" "}
+              tells you how it pays back. It is the measure of risk associated
+              with a specific game. In technical terms, volatility describes the{" "}
+              <WikiLink page="Standard_deviation">standard deviation</WikiLink> of
+              a game&apos;s payout distribution.
             </p>
           </section>
 
@@ -72,9 +77,11 @@ export default function ArticleVolatilityPage() {
             <p className="text-neutral-400 leading-relaxed">
               Volatility is often manipulated through game design to trigger
               specific psychological responses. High-volatility games frequently
-              utilize the &quot;near miss&quot; mechanic—where symbols for a major
-              win land just outside the payline—to maintain player engagement
-              during long losing streaks.
+              utilize the &quot;
+              <WikiLink page="Near-miss_effect">near miss</WikiLink>&quot;
+              mechanic—where symbols for a major win land just outside the{" "}
+              <WikiLink page="Slot_machine">payline</WikiLink>—to maintain player
+              engagement during long losing streaks.
             </p>
           </section>
 
@@ -85,9 +92,10 @@ export default function ArticleVolatilityPage() {
             <p className="text-neutral-400 leading-relaxed">
               A professional approach to volatility requires a
               &quot;Bet-to-Bankroll&quot; ratio. For a high-volatility slot, a
-              player might need 500x their base bet to survive the variance. For
-              low volatility, 100x might suffice. Professional gamblers use these
-              ratios to ensure they stay in the game long enough to hit the
+              player might need 500x their base bet to survive the{" "}
+              <WikiLink page="Variance">variance</WikiLink>. For low volatility,
+              100x might suffice. Professional gamblers use these ratios to
+              ensure they stay in the game long enough to hit the
               &quot;positive side&quot; of the variance curve.
             </p>
           </section>
