@@ -110,9 +110,19 @@ export default function Home() {
         <ul className="space-y-3 text-neutral-300">
           <li>
             <a
+              href="https://github.com/chenxi-cloud"
+              target="_blank"
+              rel="me noopener noreferrer"
+              className="text-yellow-500 hover:text-yellow-400 underline underline-offset-2"
+            >
+              GitHub (chenxi-cloud)
+            </a>
+          </li>
+          <li>
+            <a
               href="https://ftp.golden-forum.com/memberlist.php?mode=viewprofile&u=227796"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               className="text-yellow-500 hover:text-yellow-400 underline underline-offset-2"
             >
               Golden-forum
@@ -122,7 +132,7 @@ export default function Home() {
             <a
               href="https://community.m5stack.com/user/chenxisigema001"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               className="text-yellow-500 hover:text-yellow-400 underline underline-offset-2"
             >
               M5Stack community
