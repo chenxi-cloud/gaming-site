@@ -26,7 +26,7 @@ export default function ArticleVolatilityPage() {
 
         <header className="mb-12">
           <p className="text-sm font-medium text-yellow-500/90 mb-3">
-            Article 4
+            Article 5
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-50 leading-tight">
             {title}

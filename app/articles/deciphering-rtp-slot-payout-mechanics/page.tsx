@@ -24,7 +24,7 @@ export default function ArticleRtpPage() {
         <ArticleAttribution />
 
         <header className="mb-12">
-          <p className="text-sm font-medium text-yellow-500/90 mb-3">Article 3</p>
+          <p className="text-sm font-medium text-yellow-500/90 mb-3">Article 4</p>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-50 leading-tight">
             Deciphering RTP: The Mathematical Backbone of Slot Payout Mechanics
           </h1>

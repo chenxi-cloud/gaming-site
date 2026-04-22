@@ -10,8 +10,16 @@ const articles = [
       "Roshtein to Fruity Slots: who dominates casino YouTube, why they hit, and lite-embedded viral clips.",
   },
   {
-    href: "/articles/high-volatility-slots-guide",
+    href: "/articles/top-10-gambling-hubs-players-visit",
     label: "Article 2",
+    title:
+      "The 10 Gambling Hubs Players Actually Tab-Hop Between (No Cap, Just Traffic Vibes)",
+    excerpt:
+      "Ten mega-portals players keep reopening—vibe check, homepage screenshot previews, and direct URLs.",
+  },
+  {
+    href: "/articles/high-volatility-slots-guide",
+    label: "Article 3",
     title:
       "High Volatility Slots: What They Are, Who They Suit, and How to Approach Them",
     excerpt:
@@ -19,7 +27,7 @@ const articles = [
   },
   {
     href: "/articles/deciphering-rtp-slot-payout-mechanics",
-    label: "Article 3",
+    label: "Article 4",
     title:
       "Deciphering RTP: The Mathematical Backbone of Slot Payout Mechanics",
     excerpt:
@@ -27,21 +35,21 @@ const articles = [
   },
   {
     href: "/articles/volatility-variance-managing-risk-modern-gaming",
-    label: "Article 4",
+    label: "Article 5",
     title: "Volatility and Variance: Managing Risk in Modern Gaming",
     excerpt:
       "Risk profiles, low vs. high volatility, near-miss design, and bet-to-bankroll ratios for surviving variance.",
   },
   {
     href: "/articles/rng-algorithms-fairness-auditing",
-    label: "Article 5",
+    label: "Article 6",
     title: "Behind the Virtual Reels: RNG Algorithms and Fairness Auditing",
     excerpt:
       "PRNG vs. TRNG, reel mapping, eCOGRA-style auditing, and debunking hot and cold machines.",
   },
   {
     href: "/articles/strategic-selection-provider-analysis",
-    label: "Article 6",
+    label: "Article 7",
     title:
       "The Architecture of Winning: Strategic Selection and Provider Analysis",
     excerpt:
